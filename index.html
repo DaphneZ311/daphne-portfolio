@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiyang (Daphne) Zhang | HCI & Digital Mental Health Researcher</title>
+    
+    <!-- Tailwind CSS (Utility-first framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: Merriweather (Serif for academic feel) & Inter (Sans for UI) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        academic: '#1e293b', // Dark Slate
+                        accent: '#0f766e',   // Teal (Digital Health vibe)
+                        soft: '#f8fafc',     // Light background
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom abstract background */
+        .hero-bg {
+            background-color: #ffffff;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #0f172a, #0f766e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-soft text-slate-800 font-sans antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-slate-200 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="text-lg font-serif font-bold text-academic">Yiyang (Daphne) Zhang</div>
+            <div class="space-x-6 text-sm font-medium text-slate-600">
+                <a href="#research" class="hover:text-accent transition">Research</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#cv" class="hover:text-accent transition">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION: Identity & Vision -->
+    <header class="hero-bg pt-32 pb-20 px-6 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-accent font-medium tracking-wide uppercase text-sm mb-4">HCI • Digital Mental Health • Cognitive Modeling</p>
+            
+            <h1 class="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6 text-slate-900">
+                Designing <span class="text-accent">Experience-Aware Systems</span> that sense and adapt to cognitive & emotional rhythms.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl font-light">
+                I research how <strong>Predictive Processing</strong> and <strong>Physiological Sensing</strong> can inform the design of adaptive interfaces. My goal is to build closed-loop systems that stabilize attention and support emotion regulation in real-time.
+            </p>
+
+            <div class="mt-8 flex gap-4">
+                <a href="#research" class="bg-academic text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-700 transition shadow-lg shadow-slate-200">View Projects</a>
+                <a href="mailto:bettyzhang311@g.ucla.edu" class="border border-slate-300 bg-white text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- RESEARCH PROJECTS SECTION -->
+    <section id="research" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="mb-12">
+            <h2 class="text-3xl font-serif font-bold text-slate-900 mb-2">Selected Research</h2>
+            <p class="text-slate-500">Integrating Bayesian inference, haptics, and affective computing.</p>
+        </div>
+
+        <div class="space-y-16">
+
+            <!-- PROJECT 1: Vibrotactile (Digital Health Application) -->
+            <div class="group grid md:grid-cols-12 gap-8 items-start border-l-2 border-slate-200 pl-6 md:pl-0 md:border-l-0">
+                <div class="md:col-span-4">
+                    <div class="text-xs font-bold text-accent uppercase tracking-wider mb-2">Honors Thesis (First Author)</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-accent transition">Adaptive Vibrotactile Stimulation for Real-Time Stress Modulation</h3>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Python/R</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">LME Models</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Biopac (ECG/GSR)</span>
+                    </div>
+                </div>
+                <div class="md:col-span-8 space-y-4">
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>The Question:</strong> Can we modulate user stress levels using haptic feedback, and does the user's <em>expectation</em> change the physiological outcome?
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        I designed a counterbalanced experiment (N=40) recording 7,000+ datapoints of HRV, GSR, and PPG during cognitive load tasks. 
+                        <strong>Key Finding:</strong> Vibration is not a static "relaxer." It reduced subjective arousal <em>only</em> when aligned with user predictions (priors), confirming a Bayesian mechanism in haptic perception. This suggests future digital health tools must be context-aware and expectation-sensitive.
+                    </p>
+                    <div class="pt-2 text-sm font-medium text-slate-500">
+                        Preparing Manuscript for Submission
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: Aesthetic Chills (Novel HCI Mechanism) -->
+            <div class="group grid md:grid-cols-12 gap-8 items-start border-l-2 border-slate-200 pl-6 md:pl-0 md:border-l-0">
+                <div class="md:col-span-4">
+                    <div class="text-xs font-bold text-accent uppercase tracking-wider mb-2">Project Lead (First Author)</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-accent transition">Aesthetic Chills: Emotional Peaks as Signals for Adaptive Systems</h3>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Quant Research (N=110)</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Performance Modeling</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Qualtrics/JS</span>
+                    </div>
+                </div>
+                <div class="md:col-span-8 space-y-4">
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>The Question:</strong> "Chills" (frisson) represent moments of high prediction error. How do these emotional peaks reorganize memory and time perception?
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Leading a team of 5, I conducted a large-scale study analyzing how physiological chills trade off episodic memory detail for temporal coherence.
+                        <strong>Implication for HCI:</strong> Emotional inflection points are detectable signatures that systems can use to time interventions—pacing changes or grounding prompts—during moments of cognitive vulnerability.
+                    </p>
+                    <div class="pt-2 text-sm font-medium text-slate-500">
+                        Preparing Manuscript | Presented at PURC
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: Bayesian Modeling (Theory Foundation) -->
+            <div class="group grid md:grid-cols-12 gap-8 items-start border-l-2 border-slate-200 pl-6 md:pl-0 md:border-l-0">
+                <div class="md:col-span-4">
+                    <div class="text-xs font-bold text-accent uppercase tracking-wider mb-2">Computational Modeling (Under Review)</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-accent transition">Multidimensional Bayesian Causal Inference in Perception</h3>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">MATLAB</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Psychophysics</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">Modeling</span>
+                    </div>
+                </div>
+                <div class="md:col-span-8 space-y-4">
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>The Question:</strong> How does the brain integrate conflicting multisensory signals (Audio/Visual) across time and number?
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Working with Dr. Ladan Shams, I implemented and fitted computational models extending the Sound-Induced Flash Illusion.
+                        <strong>Contribution:</strong> We proved that human perception follows a "Multidimensional" Bayesian inference process. This theoretical work underpins my belief that mental health issues often stem from mismatches between sensory evidence and internal predictions.
+                    </p>
+                    <div class="pt-2 text-sm font-medium text-slate-500">
+                        Under Review in <em>Psychonomic Bulletin & Review</em>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT & VISION SECTION -->
+    <section id="about" class="bg-slate-50 py-20 px-6 border-y border-slate-200">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-serif font-bold text-slate-900 mb-4">Research Philosophy</h2>
+                <p class="text-slate-600 leading-relaxed mb-4 font-light">
+                    Technology no longer just extends human capability; it shapes our cognitive and emotional rhythms.
+                </p>
+                <p class="text-slate-600 leading-relaxed font-light">
+                    My research bridges <strong>Cognitive Science</strong> and <strong>HCI</strong>. I believe that to build effective digital mental health tools, we cannot just design better screens; we must design systems that understand the user's internal model.
+                </p>
+                <p class="text-slate-600 leading-relaxed font-light mt-4">
+                    By treating attention and emotion as adaptive resources rather than static constraints, I aim to create interfaces that act as cognitive partners.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-serif font-bold text-slate-900 mb-4">Education & Skills</h2>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <div class="mb-4">
+                        <div class="font-bold text-slate-800">University of California, Los Angeles</div>
+                        <div class="text-sm text-slate-500">B.S. Cognitive Science, Specialization in Computing</div>
+                        <div class="text-sm text-accent mt-1">GPA: 3.91 / Major GPA: 4.0</div>
+                    </div>
+                    
+                    <hr class="my-4 border-slate-100">
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <div class="text-xs font-bold text-slate-400 uppercase mb-1">Languages</div>
+                            <div class="text-sm text-slate-700">Python, MATLAB, R, HTML/CSS</div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-slate-400 uppercase mb-1">Sensing & Tools</div>
+                            <div class="text-sm text-slate-700">Biopac (ECG, GSR), PsychoPy, FSL, Eye-tracking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-6 text-center">
+        <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6">Let's Connect</h2>
+        <div class="flex justify-center gap-6 mb-8">
+            <a href="mailto:bettyzhang311@g.ucla.edu" class="text-slate-600 hover:text-accent underline decoration-1 underline-offset-4">Email</a>
+            <a href="#" class="text-slate-600 hover:text-accent underline decoration-1 underline-offset-4">Google Scholar</a>
+            <a href="#" class="text-slate-600 hover:text-accent underline decoration-1 underline-offset-4">LinkedIn</a>
+            <a href="#" class="text-slate-600 hover:text-accent underline decoration-1 underline-offset-4">Download CV (PDF)</a>
+        </div>
+        <p class="text-slate-400 text-sm">
+            &copy; 2025 Yiyang (Daphne) Zhang. Built for Academic Portfolio.
+        </p>
+    </footer>
+
+</body>
+</html>
